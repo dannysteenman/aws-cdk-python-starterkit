@@ -13,10 +13,11 @@ project = AwsCdkPythonApp(
     name="aws-cdk-python-starterkit",
     description="Create and deploy an AWS CDK app on your AWS account in less than 5 minutes using GitHub actions!",
     version="0.1.0",
+    poetry=True,
+    dev_deps=["ruff"],
     github_options={
         "pull_request_lint": False,
     },
-    poetry=True,
     git_ignore_options={
         "ignore_patterns": [
             "__pycache__",
