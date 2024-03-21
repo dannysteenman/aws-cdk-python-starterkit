@@ -1,6 +1,7 @@
 from projen import github
 from projen.awscdk import AwsCdkPythonApp
 
+from src.bin.cicd_helper import github_cicd
 from src.bin.env_helper import cdk_action_task
 
 project = AwsCdkPythonApp(
@@ -65,6 +66,7 @@ target_accounts = {
     "production": None,
 }
 
+gh = github.GitHub(project)
 # Loop through each environment in target_accounts
 for env, account in target_accounts.items():
     if account:  # Check if account is not None
@@ -77,6 +79,7 @@ for env, account in target_accounts.items():
             },
         )
 
-project.synth()
+        # Adds GitHub action workflows for deploying the CDK stacks to the target AWS account
+        github_cicd(gh, account, env, "3.11")  # Python 3.11
 
-gh = github.GitHub(project)
+project.synth()
