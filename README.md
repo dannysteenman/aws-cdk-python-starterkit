@@ -5,8 +5,7 @@
 > The perfect starter kit to create and deploy an AWS CDK app on your AWS account in less than 5 minutes using GitHub actions!
 
 [![Build Status](https://github.com/dannysteenman/aws-cdk-starterkit/actions/workflows/build.yml/badge.svg)](https://github.com/dannysteenman/aws-cdk-starterkit/actions/workflows/build.yml)
-[![ESLint Code Formatting](https://img.shields.io/badge/code_style-eslint-brightgreen.svg)](https://eslint.org)
-[![Latest release](https://img.shields.io/github/release/dannysteenman/aws-cdk-starterkit.svg)](https://github.com/dannysteenman/aws-cdk-starterkit/releases)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Intro
 
