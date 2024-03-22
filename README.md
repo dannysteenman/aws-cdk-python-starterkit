@@ -42,6 +42,10 @@ All the config that is needed to personalise the CDK App to your environment is 
 5. Customize the AWS Region and Account IDs in the [.projenrc.py](./.projenrc.py) file to match your AWS setup:
 
 ```python
+# Define the AWS region for the CDK app and github workflows
+# Default to us-east-1 if AWS_REGION is not set in your environment variables
+aws_region = os.getenv("AWS_REGION", "us-east-1")
+
 # Set the CDK_DEFAULT_REGION environment variable for the projen tasks,
 # so the CDK CLI knows which region to use
 project.tasks.add_environment("CDK_DEFAULT_REGION", aws_region)
