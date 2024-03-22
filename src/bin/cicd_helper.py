@@ -16,7 +16,7 @@ def github_cicd(gh, account, env, python_version):
                 "permissions": {
                     "actions": github.workflows.JobPermission.WRITE,
                     "contents": github.workflows.JobPermission.READ,
-                    "id_token": github.workflows.JobPermission.WRITE,
+                    "idToken": github.workflows.JobPermission.WRITE,
                 },
                 "steps": [
                     {
@@ -39,16 +39,29 @@ def github_cicd(gh, account, env, python_version):
                         },
                     },
                     {
+                        "name": "Install and configure Poetry",
+                        "uses": "snok/install-poetry@v1",
+                        "with": {
+                            "virtualenvs-create": "true",
+                            "virtualenvs-in-project": "true",
+                            "prefer-active-python": "true",
+                        },
+                    },
+                    {
                         "name": "Install dependencies",
                         "run": "poetry install",
                     },
                     {
+                        "name": "Install cdk & projen",
+                        "run": "npm install -g aws-cdk projen",
+                    },
+                    {
                         "name": f"Run CDK synth for the {env.upper()} environment",
-                        "run": f"npx projen {env}:synth",
+                        "run": f"projen {env}:synth",
                     },
                     {
                         "name": f"Deploy CDK to the {env.upper()} environment on AWS account {account}",
-                        "run": f"npx projen {env}:deploy",
+                        "run": f"projen {env}:deploy",
                     },
                 ],
             },

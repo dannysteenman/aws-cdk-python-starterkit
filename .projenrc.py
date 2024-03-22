@@ -1,11 +1,18 @@
+import os
+
 from projen import github
 from projen.awscdk import AwsCdkPythonApp
 
 from src.bin.cicd_helper import github_cicd
 from src.bin.env_helper import cdk_action_task
 
+# Define the python module name and set the python version
 python_module_name = "src"
 python_version = "3.11"
+
+# Define the AWS region for the CDK app and github workflows
+# Default to us-east-1 if AWS_REGION is not set in your environment variables
+aws_region = os.getenv("AWS_REGION", "us-east-1")
 
 project = AwsCdkPythonApp(
     author_email="danny@towardsthecloud.com",
@@ -61,8 +68,9 @@ project = AwsCdkPythonApp(
     },
 )
 
-# Define the AWS Region for the CDK app
-project.tasks.add_environment("CDK_DEFAULT_REGION", "us-east-1")
+# Set the CDK_DEFAULT_REGION environment variable for the projen tasks,
+# so the CDK CLI knows which region to use
+project.tasks.add_environment("CDK_DEFAULT_REGION", aws_region)
 
 # Define the target AWS accounts for the different environments
 target_accounts = {

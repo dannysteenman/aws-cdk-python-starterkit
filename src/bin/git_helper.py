@@ -11,4 +11,5 @@ def get_git_repo_details():
         raise ValueError("Unable to parse git repository URL")
 
     git_owner, repo_name = match.group(1), match.group(2)
+    repo_name = repo_name.removesuffix(".git")
     return git_owner, repo_name

@@ -13,6 +13,7 @@ jobs:
     permissions:
       actions: write
       contents: read
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,10 +25,18 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::123456789012:role/GitHubDeployRole
-          aws-region: us-east-1
+          aws-region: eu-west-1
+      - name: Install and configure Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: "true"
+          virtualenvs-in-project: "true"
+          prefer-active-python: "true"
       - name: Install dependencies
         run: poetry install
+      - name: Install cdk & projen
+        run: npm install -g aws-cdk projen
       - name: Run CDK synth for the TEST environment
-        run: npx projen test:synth
+        run: projen test:synth
       - name: Deploy CDK to the TEST environment on AWS account 123456789012
-        run: npx projen test:deploy
+        run: projen test:deploy
