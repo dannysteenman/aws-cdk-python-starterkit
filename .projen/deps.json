@@ -10,6 +10,10 @@
       "type": "devenv"
     },
     {
+      "name": "aws-cdk-github-oidc",
+      "type": "runtime"
+    },
+    {
       "name": "aws-cdk-lib",
       "version": "2.133.0",
       "type": "runtime"

@@ -68,6 +68,24 @@ publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
+name = "aws-cdk-github-oidc"
+version = "2.4.1"
+description = "CDK constructs to use OpenID Connect for authenticating your Github Action workflow with AWS IAM"
+optional = false
+python-versions = "~=3.7"
+files = [
+    {file = "aws-cdk-github-oidc-2.4.1.tar.gz", hash = "sha256:1c4b794f7b51e4eb58e4358bb106646f5adb0e4d12666001d739f2719f575e29"},
+    {file = "aws_cdk_github_oidc-2.4.1-py3-none-any.whl", hash = "sha256:f85bcb032ebe1f51dcef90e59e5d596439596f4ddb5ed195d04557c358985622"},
+]
+
+[package.dependencies]
+aws-cdk-lib = ">=2.89.0,<3.0.0"
+constructs = ">=10.0.0,<11.0.0"
+jsii = ">=1.86.1,<2.0.0"
+publication = ">=0.0.3"
+typeguard = ">=2.13.3,<2.14.0"
+
+[[package]]
 name = "aws-cdk-lib"
 version = "2.133.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
@@ -384,4 +402,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "05b6de7317154aaf7e7c5e21830c615f316c78dbc71e97914df8699e4777012e"
+content-hash = "4b8e4f30737f3f115e8f6310c4b6fdf8c89f19c9bd41cde35e0a9f8a969b853c"

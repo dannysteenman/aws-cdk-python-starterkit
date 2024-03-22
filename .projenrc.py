@@ -4,16 +4,21 @@ from projen.awscdk import AwsCdkPythonApp
 from src.bin.cicd_helper import github_cicd
 from src.bin.env_helper import cdk_action_task
 
+python_module_name = "src"
+python_version = "3.11"
+
 project = AwsCdkPythonApp(
     author_email="danny@towardsthecloud.com",
     author_name="Danny Steenman",
     cdk_version="2.133.0",
     cdk_version_pinning=True,
-    module_name="src",
+    module_name=python_module_name,
     name="aws-cdk-python-starterkit",
     description="Create and deploy an AWS CDK app on your AWS account in less than 5 minutes using GitHub actions!",
     version="0.1.0",
     poetry=True,
+    app_entrypoint=f"{python_module_name}/app.py",
+    deps=["aws-cdk-github-oidc"],
     dev_deps=["ruff"],
     github_options={
         "pull_request_lint": False,
@@ -81,6 +86,6 @@ for env, account in target_accounts.items():
         )
 
         # Adds GitHub action workflows for deploying the CDK stacks to the target AWS account
-        github_cicd(gh, account, env, "3.11")  # Python 3.11
+        github_cicd(gh, account, env, python_version)  # Python 3.11
 
 project.synth()

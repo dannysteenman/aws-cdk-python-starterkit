@@ -8,6 +8,7 @@ authors = [ "Danny Steenman <danny@towardsthecloud.com>" ]
 readme = "README.md"
 
   [tool.poetry.dependencies]
+  aws-cdk-github-oidc = "*"
   aws-cdk-lib = "2.133.0"
   constructs = "^10.0.5"
   python = "^3.8"
