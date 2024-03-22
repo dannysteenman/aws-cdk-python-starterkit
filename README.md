@@ -1,4 +1,4 @@
-# [![AWS CDK Python Starterkit header](https://raw.githubusercontent.com/dannysteenman/aws-cdk-starterkit/main/icons/github-header-image.png)](https://towardsthecloud.com)
+# [![AWS CDK Python Starterkit header](https://raw.githubusercontent.com/dannysteenman/aws-cdk-python-starterkit/main/icons/github-header-image.png)](https://towardsthecloud.com)
 
 # AWS CDK Python Starterkit
 
