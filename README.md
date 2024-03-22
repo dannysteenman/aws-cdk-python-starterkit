@@ -2,7 +2,7 @@
 
 # AWS CDK Python Starterkit
 
-> The perfect starter kit to create and deploy an AWS CDK app on your AWS account in less than 5 minutes using GitHub actions!
+> The perfect starter kit to create and deploy an AWS CDK App using Python on your AWS account in less than 5 minutes using GitHub actions!
 
 [![Build Status](https://github.com/dannysteenman/aws-cdk-starterkit/actions/workflows/build.yml/badge.svg)](https://github.com/dannysteenman/aws-cdk-starterkit/actions/workflows/build.yml)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -21,7 +21,7 @@ Welcome to the starting line of your next AWS CDK project. This repository is cr
 - 🤖 Automated Deploy Pipelines: Embrace CI/CD with out-of-the-box GitHub Actions workflows, automating your deployment processes for efficiency and reliability.
 - 🏗️ Project structure: The [project is structured](#project-structure) in a clean and intuitive way that allows you to easily manage your constructs and stacks for this CDK App.
 - 🛡️ Seamless Security: Leverage OpenID Connect for secure AWS deployments. Authenticate your GitHub Actions workflows directly with AWS, eliminating the need for stored credentials or long-lived secrets.
-- 📦 Improved Dependency Management: Depencies and virtualenvs are managed with Poetry.
+- 📦 Improved Dependency Management: Dependencies and virtualenvs are managed with Poetry.
 - 📏 Fast Linting & formatting: Ruff is installed as a dev dependency right out of the box!
 - 🚀 Enhanced Pull Requests: Benefit from a built-in, fancy pull request template, making code reviews more structured and informative.
 
@@ -157,6 +157,10 @@ Here is a brief explanation of what each section does:
 >
 > <a href="https://towardsthecloud.com/contact"><img alt="Request Quote" src="https://img.shields.io/badge/request%20quote-success.svg?style=for-the-badge"/></a>
 > </details>
+
+## AWS CDK Starterkit for TypeScript Users
+
+> **Looking for the TypeScript version of this AWS CDK starter kit?** Check out the [AWS CDK Starterkit](https://github.com/dannysteenman/aws-cdk-starterkit) for a tailored experience that leverages the full power of AWS CDK with TypeScript.
 
 ## Acknowledgements
 
