@@ -21,6 +21,7 @@ project = AwsCdkPythonApp(
     cdk_version_pinning=True,
     module_name=python_module_name,
     name="aws-cdk-python-starterkit",
+    license="Apache-2.0",
     description="Create and deploy an AWS CDK app on your AWS account in less than 5 minutes using GitHub actions!",
     version="0.1.0",
     poetry=True,
