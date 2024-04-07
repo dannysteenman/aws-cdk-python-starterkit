@@ -6,7 +6,7 @@ from projen import github
 def github_cicd(gh, account, env, python_version):
     # Add a GitHub workflow for deploying the CDK stacks to the AWS account
     cdk_deployment_workflow = github.GithubWorkflow(gh, f"cdk-deploy-{env}")
-    cdk_deployment_workflow.on(push={"branches": ["main"]}, workflow_dispatch={})
+    cdk_deployment_workflow.on(push={"branches": ["main"]} if env != "production" else None, workflow_dispatch={})
 
     cdk_deployment_workflow.add_jobs(
         {
