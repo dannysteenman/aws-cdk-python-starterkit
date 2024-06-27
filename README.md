@@ -132,35 +132,40 @@ Here is a brief explanation of what each section does:
 ## Unlock AWS CDK's Full Potential - Partner with Us!
 
 > [!TIP]
-> In today's fast-paced cloud world, the key to operational excellence lies in robust, scalable, and efficient infrastructure. That's where we shine.<br/><br/>
-> At **Towards the Cloud**, we craft bespoke AWS CDK solutions that not only meet your current needs but anticipate future challenges. Our approach is simple yet powerful:
+> In the ever-evolving cloud landscape, your infrastructure should be your greatest asset, not your biggest headache. At [Towards the Cloud](https://towardsthecloud.com), we transform complex AWS challenges into powerful, scalable solutions.
 >
-> ✅ **We Innovate Together**: Your vision, our expertise - a perfect blend for success.<br/>
-> ✅ **You own it all**: Full transparency and complete ownership of every solution we build.<br/>
-> ✅ **We Empower Your Team**: Turn your infrastructure into your competitive edge.<br/>
+> Our Approach:
 >
-> Ready to elevate your AWS CDK game? Let's build something extraordinary together.
+> - **Tailored CDK Solutions**: Custom-built for your unique business needs
+> - **Future-Proof Architecture**: Scalable designs that grow with you
+> - **Empowerment Through Ownership**: Your vision, your infrastructure, our expertise
+>
+> Why Choose Us:
+> - 10+ Years of AWS Experience
+> - 7x AWS Certified, including DevOps Engineer & Solutions Architect Professional
+> - Proven Track Record: 40% Average Reduction in Operational Costs
+>
+> Ready to elevate your AWS CDK Infrastructure?
 >
 > <a href="https://towardsthecloud.com/contact"><img alt="Schedule your call" src="https://img.shields.io/badge/schedule%20your%20call-success.svg?style=for-the-badge"/></a>
 > <details><summary>☁️ <strong>Discover more about my one-person business: Towards the Cloud</strong></summary>
 >
 > <br/>
 >
-> Hey there! I'm Danny, the driving force behind **Towards the Cloud**, bringing over a decade of hands-on experience to the table. My specialty? Crafting rock-solid AWS infrastructures using IaC for both startups and enterprises.
->
-> *I'm all about architecting and building distributed, scalable cloud-native systems using AWS CDK. My mission is simple: I'll help you supercharge your application by deploying well-architected, highly scalable and cost-effective cloud infrastructure.*
+> Hi, I'm Danny – AWS expert and founder of [Towards the Cloud](https://towardsthecloud.com). With over a decade of hands-on experience, I specialized myself in deploying well-architected, highly scalable and cost-effective AWS Solutions using Infrastructure as Code (IaC).
 >
 > #### When you work with me, you're getting a package deal of expertise and personalized service:
 >
-> - **AWS CDK Expertise**: I bring deep AWS CDK knowledge to the table, ensuring your infrastructure is not just maintainable and scalable, but also fully automated.
-> - **Custom Solutions**: Understanding that no two businesses are alike, I tailor cloud solutions to fit your unique needs perfectly.
-> - **Cost-Effective**: I'll optimize your AWS spending without cutting corners on performance or security.
+> - **AWS CDK Proficiency**: I bring deep AWS CDK knowledge to the table, ensuring your infrastructure is not just maintainable and scalable, but also fully automated.
+> - **AWS Certified**: [Equipped with 7 AWS Certifications](https://www.credly.com/users/dannysteenman/badges), including DevOps Engineer & Solutions Architect Professional, to ensure best practices across diverse cloud scenarios.
 > - **Direct Access**: You work with me, not a team of managers. Expect quick decisions and high-quality work.
+> - **Tailored Solutions**: Understanding that no two businesses are alike, I Custom-fit cloud infrastructure for your unique needs.
+> - **Cost-Effective**: I'll optimize your AWS spending without cutting corners on performance or security.
 > - **Seamless CI/CD**: I'll set up smooth CI/CD processes using GitHub Actions, making changes a breeze through Pull Requests.
 >
-> My ultimate goal is to transform your cloud infrastructure and give your business a serious boost.
+> *My mission is simple: I'll free you from infrastructure headaches so you can focus on what truly matters – your core business.*
 >
-> Let's talk about how we can make that happen.
+> Ready to unlock the full potential of AWS Cloud?
 >
 > <a href="https://towardsthecloud.com/contact"><img alt="Schedule your call" src="https://img.shields.io/badge/schedule%20your%20call-success.svg?style=for-the-badge"/></a>
 > </details>
@@ -172,3 +177,11 @@ Here is a brief explanation of what each section does:
 ## Acknowledgements
 
 A heartfelt thank you to the creators of [projen](https://github.com/projen/projen). This starter kit stands on the shoulders of giants, made possible by their pioneering work in simplifying cloud infrastructure projects!
+
+## Author
+
+Danny Steenman
+
+[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dannysteenman)
+[![](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/dannysteenman)
+[![](https://img.shields.io/badge/GitHub-2b3137?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dannysteenman)
