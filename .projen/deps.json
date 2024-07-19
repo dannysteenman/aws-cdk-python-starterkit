@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "projen",
-      "version": "0.80.12",
+      "version": "0.84.4",
       "type": "devenv"
     },
     {
@@ -15,7 +15,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "2.147.1",
+      "version": "2.149.0",
       "type": "runtime"
     },
     {

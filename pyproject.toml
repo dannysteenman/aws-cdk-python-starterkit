@@ -10,12 +10,12 @@ readme = "README.md"
 
   [tool.poetry.dependencies]
   aws-cdk-github-oidc = "*"
-  aws-cdk-lib = "2.147.1"
+  aws-cdk-lib = "2.149.0"
   constructs = "^10.0.5"
   python = "^3.8"
 
 [tool.poetry.group.dev.dependencies]
-projen = "0.80.12"
+projen = "0.84.4"
 ruff = "*"
 pytest = "7.4.3"
 
