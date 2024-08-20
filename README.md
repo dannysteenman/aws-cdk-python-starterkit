@@ -1,4 +1,4 @@
-# [![AWS CDK Python Starterkit header](https://raw.githubusercontent.com/dannysteenman/aws-cdk-python-starterkit/main/icons/github-header-image.png)](https://towardsthecloud.com)
+# [![AWS CDK Python Starterkit header](./icons/github-header-image.png)](https://towardsthecloud.com)
 
 # AWS CDK Python Starterkit
 
@@ -12,7 +12,7 @@
 Welcome to the starting line of your next AWS CDK project. This repository is crafted to supercharge your project's setup with AWS CDK Python, projen, and GitHub actions, ensuring a smooth and efficient deployment to your AWS account.
 
 > [!TIP]
-> [Unlock AWS CDK's Full Potential - Partner with Us!](#unlock-aws-cdks-full-potential---partner-with-us)
+> [Unlock the full potention of your infrastructure - Partner with Us!](#unlock-the-full-potention-of-your-infrastructure---partner-with-us)
 
 ## Features
 
@@ -129,14 +129,14 @@ Here is a brief explanation of what each section does:
 - `src/lib/main.ts`: This is where the CDK app is instantiated.
 - `test`: Is the location to store your unit or integration tests (powered by jest)
 
-## Unlock AWS CDK's Full Potential - Partner with Us!
+## Unlock the full potention of your infrastructure - Partner with us!
 
 > [!TIP]
-> In the ever-evolving cloud landscape, your infrastructure should be your greatest asset, not your biggest headache. At [Towards the Cloud](https://towardsthecloud.com), we transform complex AWS challenges into powerful, scalable solutions.
+> Supercharge Your AWS Infrastructure with [Towards the Cloud](https://towardsthecloud.com). We ship well-architected, resilient, and cost-optimized AWS solutions designed to scale using Infrastructure as Code (IaC), tailoring cloud-native systems for businesses of all sizes.
 >
 > Our Approach:
 >
-> - **Tailored CDK Solutions**: Custom-built for your unique business needs
+> - **Tailored AWS Solutions**: Custom-built for your unique business needs
 > - **Future-Proof Architecture**: Scalable designs that grow with you
 > - **Empowerment Through Ownership**: Your vision, your infrastructure, our expertise
 >
@@ -180,7 +180,7 @@ A heartfelt thank you to the creators of [projen](https://github.com/projen/proj
 
 ## Author
 
-Danny Steenman
+[Danny Steenman](https://towardsthecloud.com/about)
 
 [![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dannysteenman)
 [![](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/dannysteenman)
